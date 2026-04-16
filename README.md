@@ -121,6 +121,10 @@ npx vercel --prod
 
 Your backend will be available under `/api/*` and the frontend will be served as a static Vite app.
 
+## 🌐 Live Demo
+
+- https://civic-needmap.onrender.com/
+
 ## ✅ Run tests
 
 ```bash
