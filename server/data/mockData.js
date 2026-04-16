@@ -1,0 +1,40 @@
+export const communityReports = [
+  { id: 'R-1001', area: 'Northside', text: 'Flooding has cut roads. 34 families need food packs, clean water, and baby formula immediately.', severitySignals: ['flood', 'families', 'immediately'], lat: 40.7138, lng: -74.0051, submittedAt: '2026-04-14T08:10:00Z' },
+  { id: 'R-1002', area: 'Brookfield', text: 'Senior center reports medicine shortage for diabetes and blood pressure patients.', severitySignals: ['medicine shortage', 'senior'], lat: 40.7101, lng: -74.0012, submittedAt: '2026-04-14T10:25:00Z' },
+  { id: 'R-1003', area: 'Hillview', text: 'Temporary shelter overcrowded; need blankets and hygiene kits.', severitySignals: ['overcrowded shelter'], lat: 40.719, lng: -73.9984, submittedAt: '2026-04-14T11:50:00Z' },
+  { id: 'R-1004', area: 'Riverside', text: 'Community kitchen requires additional volunteers for meal prep this evening.', severitySignals: ['meal prep'], lat: 40.7049, lng: -74.0141, submittedAt: '2026-04-14T12:12:00Z' },
+  { id: 'R-1005', area: 'Oak Junction', text: 'Power outage in apartment block, residents request charging stations and drinking water.', severitySignals: ['power outage'], lat: 40.7223, lng: -74.0121, submittedAt: '2026-04-14T14:06:00Z' },
+  { id: 'R-1006', area: 'Lakeside', text: 'Clinic requests wound care supplies and two nurses for mobile medical camp.', severitySignals: ['clinic request', 'nurses'], lat: 40.725, lng: -74.0044, submittedAt: '2026-04-14T15:49:00Z' },
+  { id: 'R-1007', area: 'East Market', text: 'Migrant families need translation support and legal aid appointments.', severitySignals: ['legal aid'], lat: 40.7092, lng: -73.9956, submittedAt: '2026-04-14T16:33:00Z' },
+  { id: 'R-1008', area: 'Harbor Point', text: 'School gym shelter has 120 people; immediate demand for cots, milk, and diapers.', severitySignals: ['120 people', 'immediate demand'], lat: 40.7005, lng: -74.01, submittedAt: '2026-04-14T17:15:00Z' },
+  { id: 'R-1009', area: 'South Park', text: 'Need transport volunteers to move donated food to three distribution points.', severitySignals: ['transport volunteers'], lat: 40.7141, lng: -74.0178, submittedAt: '2026-04-14T18:02:00Z' },
+  { id: 'R-1010', area: 'Greenfield', text: 'Parents requesting temporary childcare while they clear debris.', severitySignals: ['childcare'], lat: 40.7176, lng: -74.008, submittedAt: '2026-04-14T19:30:00Z' },
+  { id: 'R-1011', area: 'West Glen', text: 'Elderly residents isolated; require home wellness checks and meal delivery.', severitySignals: ['elderly', 'isolated'], lat: 40.7118, lng: -74.0192, submittedAt: '2026-04-15T07:05:00Z' },
+  { id: 'R-1012', area: 'Union Square', text: 'Pet owners in temporary shelter need animal food and volunteer vets.', severitySignals: ['volunteer vets'], lat: 40.7069, lng: -74.0033, submittedAt: '2026-04-15T07:40:00Z' },
+  { id: 'R-1013', area: 'Canal District', text: 'Need multilingual hotline volunteers for emergency calls tonight.', severitySignals: ['emergency calls'], lat: 40.7281, lng: -74.0019, submittedAt: '2026-04-15T08:25:00Z' },
+  { id: 'R-1014', area: 'Liberty Block', text: 'Requesting hygiene kits for 90 displaced residents and sanitary products.', severitySignals: ['90 displaced'], lat: 40.7024, lng: -74.0071, submittedAt: '2026-04-15T09:03:00Z' },
+  { id: 'R-1015', area: 'Midtown South', text: 'Need electricians to restore power in community health center wing.', severitySignals: ['health center', 'electricians'], lat: 40.7247, lng: -73.9999, submittedAt: '2026-04-15T09:31:00Z' },
+  { id: 'R-1016', area: 'Elm Heights', text: 'Families request cooking gas and dry rations for the next 48 hours.', severitySignals: ['48 hours', 'dry rations'], lat: 40.7205, lng: -74.0164, submittedAt: '2026-04-15T10:14:00Z' },
+  { id: 'R-1017', area: 'Pine Terrace', text: 'Community center asks for mental health counselors after storm trauma.', severitySignals: ['mental health counselors'], lat: 40.7085, lng: -74.0214, submittedAt: '2026-04-15T10:58:00Z' },
+  { id: 'R-1018', area: 'Maple Gate', text: 'Need extra wheelchairs and mobility support volunteers for evacuation hub.', severitySignals: ['evacuation hub', 'wheelchairs'], lat: 40.7159, lng: -73.9968, submittedAt: '2026-04-15T11:42:00Z' },
+  { id: 'R-1019', area: 'Cedar Point', text: 'Household water filters requested due to contamination alerts.', severitySignals: ['contamination alerts'], lat: 40.7037, lng: -74.0155, submittedAt: '2026-04-15T12:36:00Z' },
+  { id: 'R-1020', area: 'Central Depot', text: 'Warehouse seeking logistics coordinators to sort incoming donations.', severitySignals: ['logistics coordinators'], lat: 40.7269, lng: -74.0104, submittedAt: '2026-04-15T13:20:00Z' }
+];
+
+export const volunteers = [
+  { id: 'V-201', name: 'Ava Thompson', skills: ['medical', 'triage', 'nursing'], availability: 'full-day', lat: 40.7142, lng: -74.0021 },
+  { id: 'V-202', name: 'Jamal Rivera', skills: ['logistics', 'driving', 'warehouse'], availability: 'evening', lat: 40.7097, lng: -74.0113 },
+  { id: 'V-203', name: 'Priya Nair', skills: ['childcare', 'counseling', 'translation'], availability: 'full-day', lat: 40.7184, lng: -74.0053 },
+  { id: 'V-204', name: 'Ethan Kim', skills: ['electrician', 'shelter-ops'], availability: 'weekend', lat: 40.7235, lng: -74.013 },
+  { id: 'V-205', name: 'Lina Morales', skills: ['food-distribution', 'kitchen', 'logistics'], availability: 'full-day', lat: 40.7073, lng: -74.0182 },
+  { id: 'V-206', name: 'Noah Patel', skills: ['mental-health', 'counseling'], availability: 'evening', lat: 40.712, lng: -73.9972 },
+  { id: 'V-207', name: 'Mia Chen', skills: ['translation', 'hotline', 'legal-aid'], availability: 'full-day', lat: 40.7262, lng: -74.0027 },
+  { id: 'V-208', name: 'Carlos Vega', skills: ['driving', 'transport', 'food-distribution'], availability: 'full-day', lat: 40.7029, lng: -74.0091 },
+  { id: 'V-209', name: 'Riya Shah', skills: ['vet-care', 'medical'], availability: 'weekend', lat: 40.7055, lng: -74.0008 },
+  { id: 'V-210', name: 'Olivia Brooks', skills: ['shelter-ops', 'hygiene', 'distribution'], availability: 'full-day', lat: 40.7199, lng: -74.0151 },
+  { id: 'V-211', name: 'Leo Martinez', skills: ['water-sanitation', 'engineering'], availability: 'evening', lat: 40.7012, lng: -74.0142 },
+  { id: 'V-212', name: 'Sophia Green', skills: ['meal-delivery', 'elder-care'], availability: 'full-day', lat: 40.7108, lng: -74.0201 },
+  { id: 'V-213', name: 'Daniel Wright', skills: ['data-entry', 'hotline', 'coordination'], availability: 'full-day', lat: 40.7274, lng: -74.0094 },
+  { id: 'V-214', name: 'Grace Lee', skills: ['mobility-support', 'nursing'], availability: 'evening', lat: 40.7163, lng: -73.9992 },
+  { id: 'V-215', name: 'Samir Ali', skills: ['logistics', 'inventory', 'warehouse'], availability: 'full-day', lat: 40.7242, lng: -74.0066 }
+];
