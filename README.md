@@ -88,6 +88,39 @@ npm run dev
 
 Then open the local Vite URL shown in the terminal.
 
+## 🚀 Deploy on Vercel
+
+This repo is Vercel-ready via `vercel.json` and a serverless backend wrapper.
+
+1. Install dependencies:
+
+```bash
+npm install
+cd server
+npm install
+```
+
+2. Log in to Vercel:
+
+```bash
+npx vercel login
+```
+
+3. Deploy:
+
+```bash
+cd c:\Users\Adity\OneDrive\Smart-Resource-Allocations
+npx vercel
+```
+
+4. For production:
+
+```bash
+npx vercel --prod
+```
+
+Your backend will be available under `/api/*` and the frontend will be served as a static Vite app.
+
 ## ✅ Run tests
 
 ```bash
