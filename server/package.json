@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "node index.js",
+    "build": "npm --prefix ../client install && npm --prefix ../client run build",
     "start": "node index.js"
   },
   "dependencies": {

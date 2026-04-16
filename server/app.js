@@ -1,5 +1,8 @@
 import express from 'express';
 import cors from 'cors';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { communityReports, volunteers as initialVolunteers } from './data/mockData.js';
 import { enrichReport, matchVolunteers } from './ai/analysis.js';
 
@@ -7,6 +10,14 @@ export function createApp() {
   const app = express();
   app.use(cors());
   app.use(express.json());
+
+  const __dirname = path.dirname(fileURLToPath(import.meta.url));
+  const clientBuildPath = path.join(__dirname, '../client/dist');
+  const hasClientBuild = fs.existsSync(clientBuildPath);
+
+  if (hasClientBuild) {
+    app.use(express.static(clientBuildPath));
+  }
 
   let volunteers = [...initialVolunteers];
   const requests = communityReports.map(enrichReport);
@@ -77,6 +88,15 @@ export function createApp() {
     assignedTasks.push({ requestId: req.params.requestId, volunteerId, completedAt: new Date().toISOString() });
     res.json({ ok: true, task: assignedTasks[assignedTasks.length - 1] });
   });
+
+  if (hasClientBuild) {
+    app.get('*', (req, res) => {
+      if (req.path.startsWith('/api')) {
+        return res.status(404).json({ error: 'API route not found' });
+      }
+      res.sendFile(path.join(clientBuildPath, 'index.html'));
+    });
+  }
 
   return app;
 }
